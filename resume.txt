@@ -34,7 +34,7 @@ Tufts STOMP: Medford, MA (January 2015 - present)
 Rutland Northeast Supervisory Union IT: Brandon, VT (June 2015 - August 2015)
 - Intern
 
-PROGRAMMING LANGUAGES
+COMPUTING
 
 C++, MATLAB, HTML/CSS, PHP, git
 
