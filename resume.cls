@@ -5,7 +5,9 @@
 \RequirePackage{tabularx}
 \RequirePackage{pgffor}
 \RequirePackage{pbox}
+\RequirePackage{geometry}
 
+\geometry{letterpaper, portrait, margin=1.5in}
 \titleformat{\section}
     {\Large\scshape\raggedright}
     {}{0em}
@@ -16,6 +18,12 @@
     {\large\scshape\raggedright}
     {}{0em}
     {}
+
+\newcommand{\contact}[3]{
+    \begin{tabularx}{\textwidth}{@{}X X r@{}}
+        #1 & #2 & #3\\ \hline
+    \end{tabularx}
+}
 
 \newcommand{\name}[1]{
     {\LARGE\scshape\raggedright{#1}}\\
