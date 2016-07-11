@@ -3,6 +3,8 @@
 \ProvidesClass{resume}[2016/07/06 custom resume class]
 \RequirePackage{titlesec}
 \RequirePackage{tabularx}
+\RequirePackage{pgffor}
+\RequirePackage{pbox}
 
 \titleformat{\section}
     {\Large\scshape\raggedright}
@@ -19,13 +21,11 @@
     {\LARGE\scshape\raggedright{#1}}\\
 }
 
-\newcommand{\education}[6]{
-    \subsection{#1}
-    #2\\
-    Matriculation: #3\\
-    Graduation: #4\\
-    Degree: #5\\
-    GPA: #6
+\newcommand{\education}[4]{
+    \begin{tabularx}{\textwidth}{@{}X r@{}}
+        {\large\scshape{#1}} & #2\\
+        \foreach \n in {#4}{\em{\n} \newline} & #3
+    \end{tabularx}
 }
 
 \newcommand{\employment}[4]{
