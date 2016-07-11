@@ -24,7 +24,7 @@
 \newcommand{\education}[4]{
     \begin{tabularx}{\textwidth}{@{}X r@{}}
         {\large\scshape{#1}} & #2\\
-        \foreach \n in {#4}{\em{\n} \newline} & #3
+        \foreach \n in {#4}{\em{\n}} & #3
     \end{tabularx}
 }
 
