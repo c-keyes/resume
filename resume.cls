@@ -20,9 +20,8 @@
     {}
 
 \newcommand{\contact}[3]{
-    \begin{tabularx}{\textwidth}{@{}X X r@{}}
-        #1 & #2 & #3\\ \hline
-    \end{tabularx}
+    #1 \hfill #2 \hfill #3\\
+    \rule{\textwidth}{0.4pt}
 }
 
 \newcommand{\name}[1]{
