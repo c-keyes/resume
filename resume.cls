@@ -7,12 +7,17 @@
 \RequirePackage{pbox}
 \RequirePackage{geometry}
 
-\geometry{letterpaper, portrait, margin=1.5in}
+\setlength{\parindent}{0ex} % Remove indent
+\setlength{\parskip}{0ex}
+\geometry{letterpaper, portrait, margin=1.25in}
+
 \titleformat{\section}
     {\Large\scshape\raggedright}
     {}{0em}
     {}
     [\titlerule]
+
+\titlespacing*{\section}{0pt}{2ex}{2ex}
 
 \titleformat{\subsection}
     {\large\scshape\raggedright}
@@ -20,8 +25,7 @@
     {}
 
 \newcommand{\contact}[3]{
-    #1 \hfill #2 \hfill #3\\
-    \rule{\textwidth}{0.4pt}
+    #1 \hfill #2 \hfill #3
 }
 
 \newcommand{\name}[1]{
@@ -39,5 +43,12 @@
     \begin{tabularx}{\textwidth}{@{}X r@{}}
         {\large\scshape{#1}} & #2\\
         \em{#4} & #3\\
+    \end{tabularx}
+}
+
+\newcommand{\activity}[3]{
+    \begin{tabularx}{\textwidth}{@{}X r@{}}
+        {\large\scshape{#1}} & #3\\
+        \em{#2} & \\
     \end{tabularx}
 }
