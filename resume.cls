@@ -9,7 +9,7 @@
 
 \setlength{\parindent}{0ex} % Remove indent
 \setlength{\parskip}{0ex}
-\geometry{letterpaper, portrait, margin=1.25in}
+\geometry{letterpaper, portrait, margin=1.15in}
 
 \titleformat{\section}
     {\Large\scshape\raggedright}
@@ -17,7 +17,8 @@
     {}
     [\titlerule]
 
-\titlespacing*{\section}{0pt}{2ex}{2ex}
+% Spacing of Section Headings
+\titlespacing*{\section}{0pt}{1.85ex}{1.85ex}
 
 \titleformat{\subsection}
     {\large\scshape\raggedright}
