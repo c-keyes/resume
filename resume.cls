@@ -9,7 +9,7 @@
 
 \setlength{\parindent}{0ex} % Remove indent
 \setlength{\parskip}{0ex}
-\geometry{letterpaper, portrait, margin=1.15in}
+\geometry{letterpaper, portrait, margin=1in}
 
 \titleformat{\section}
     {\Large\scshape\raggedright}
@@ -40,10 +40,10 @@
     \end{tabularx}
 }
 
-\newcommand{\employment}[4]{
+\newcommand{\employment}[5]{
     \begin{tabularx}{\textwidth}{@{}X r@{}}
         {\large\scshape{#1}} & #2\\
-        \em{#4} & #3\\
+       {\em{#4}} - #5 & #3\\
     \end{tabularx}
 }
 
